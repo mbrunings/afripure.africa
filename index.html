@@ -4,54 +4,113 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AfriPure – Pure. Clean. Daily.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+      color: #1b5e20;
       text-align: center;
-      background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
-      margin: 0;
-      padding: 60px 20px;
-      color: #333;
+      padding: 40px 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      background: white;
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     }
     .logo {
-      font-size: 80px;
-      margin-bottom: 20px;
+      width: 120px;
+      height: 120px;
+      background: #4caf50;
+      color: white;
+      font-size: 60px;
+      line-height: 120px;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 20px rgba(76,175,80,0.3);
     }
     h1 {
-      font-size: 3.5em;
-      color: #27ae60;
-      margin: 10px 0;
+      font-size: 2.8em;
+      font-weight: 700;
+      margin: 15px 0;
+      color: #1b5e20;
+    }
+    .tagline {
+      font-size: 1.4em;
+      font-weight: 600;
+      color: #388e3c;
+      margin-bottom: 20px;
     }
     p {
-      font-size: 1.3em;
-      max-width: 600px;
-      margin: 15px auto;
-      line-height: 1.6;
+      font-size: 1.1em;
+      line-height: 1.7;
+      color: #2e7d32;
+      margin: 12px 0;
     }
-    a {
-      color: #3498db;
+    .highlight {
+      background: #e8f5e9;
+      padding: 15px;
+      border-radius: 12px;
+      margin: 20px 0;
+      font-weight: 500;
+    }
+    .contact {
+      margin-top: 30px;
+      font-size: 1.2em;
+    }
+    .contact a {
+      color: #1b5e20;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+      border-bottom: 2px solid #4caf50;
     }
-    a:hover {
-      text-decoration: underline;
+    .contact a:hover {
+      color: #4caf50;
     }
     .footer {
-      margin-top: 50px;
+      margin-top: 40px;
       font-size: 0.9em;
-      color: #777;
+      color: #66bb6a;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 2.2em; }
+      .logo { width: 100px; height: 100px; font-size: 50px; line-height: 100px; }
     }
   </style>
 </head>
 <body>
-  <div class="logo">🌿</div>
-  <h1>AfriPure</h1>
-  <p><strong>Pure. Clean. Daily.</strong></p>
-  <p>High-quality, affordable detergent sachets for Ghanaian homes.</p>
-  <p>Launching in <strong>Accra & Kumasi</strong> – <strong>Q1 2026</strong></p>
-  <p><strong>Contact:</strong> <a href="mailto:info@afripure.africa">info@afripure.africa</a></p>
-  <div class="footer">
-    © 2026 AfriPure. All rights reserved.
+  <div class="container">
+    <div class="logo">🌿</div>
+    <h1>AfriPure</h1>
+    <p class="tagline">Pure. Clean. Daily.</p>
+    
+    <p>High-quality, affordable <strong>detergent sachets</strong> made for Ghanaian homes.</p>
+    
+    <div class="highlight">
+      🚀 <strong>Pilot Launch:</strong> Accra & Kumasi – Q1 2026
+    </div>
+    
+    <p>We are partnering with local manufacturers to bring <strong>private label essentials</strong> to kiosks, markets, and families across West Africa.</p>
+    
+    <div class="contact">
+      <p><strong>Contact us:</strong><br>
+      <a href="mailto:info@afripure.africa">info@afripure.africa</a></p>
+    </div>
+    
+    <div class="footer">
+      © 2026 AfriPure. Building a cleaner tomorrow.
+    </div>
   </div>
 </body>
 </html>
